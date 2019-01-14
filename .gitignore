@@ -1,0 +1,2 @@
+# do not include vim plug generated dir
+config/neovim/.config/nvim/plugged/
