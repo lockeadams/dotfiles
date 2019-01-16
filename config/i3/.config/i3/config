@@ -177,7 +177,7 @@ bindsym $mod+z gaps outer current plus 5; gaps inner current plus 5
 bindsym $mod+q exec --no-startup-id qutebrowser
 
 # Compositor
-exec_always --no-startup-id  compton --config /etc/xdg/compton.conf -b
+exec_always --no-startup-id  compton --config ~/.config/compton/compton.conf -b
 
 # Hide mouse cursor after idle period
 exec --no-startup-id unclutter
