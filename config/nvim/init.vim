@@ -10,6 +10,7 @@
     call plug#begin()
         Plug 'Yggdroot/indentLine'
         Plug 'chrisbra/Colorizer'
+        Plug 'neoclide/coc.nvim', {'branch': 'release'}
     call plug#end()
 
 "" general settings
