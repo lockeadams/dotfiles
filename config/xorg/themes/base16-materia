@@ -1,0 +1,41 @@
+! Base16 Materia
+! Scheme: Defman21
+
+#define c0 #263238
+#define c1 #2c393f
+#define c2 #37474f
+#define c3 #707880
+#define c4 #c9ccd3
+#define c5 #cdd3de
+#define c6 #d5dbe5
+#define c7 #ffffff
+#define c8 #ec5f67
+#define c9 #ea9560
+#define cA #ffcc00
+#define cB #8bd649
+#define cC #80cbc4
+#define cD #89ddff
+#define cE #82aaff
+#define cF #ec5f67
+
+*foreground:   c4
+*background:   c0
+*cursorColor:  c4
+
+*color0:       c0
+*color1:       c8
+*color2:       cB
+*color3:       cA
+*color4:       cD
+*color5:       cE
+*color6:       cC
+*color7:       c5
+
+*color8:       c3
+*color9:       c9
+*color10:      c1
+*color11:      c2
+*color12:      c4
+*color13:      c6
+*color14:      cF
+*color15:      c7

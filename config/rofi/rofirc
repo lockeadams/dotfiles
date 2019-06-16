@@ -1,0 +1,13 @@
+!! ██████╗  ██████╗ ███████╗██╗
+!! ██╔══██╗██╔═══██╗██╔════╝██║
+!! ██████╔╝██║   ██║█████╗  ██║
+!! ██╔══██╗██║   ██║██╔══╝  ██║
+!! ██║  ██║╚██████╔╝██║     ██║
+!! ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝
+
+rofi.modi: drun,window
+rofi.color-normal:  c0, c4, c0, c5, c3
+rofi.color-window:  c0, c4
+rofi.font: FONT FONT_SIZE
+rofi.padding: PADDING
+rofi.sidebar-mode: true

@@ -1,0 +1,6 @@
+export ZDOTDIR="${${(%):-%x}:P:h}"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XAUTHORITY="$XDG_CONFIG_HOME/xorg/.Xauthority"
+export EDITOR="nvim"
