@@ -1,7 +1,8 @@
 #!/usr/bin/bash
 # install.sh - automatically symlinks configuration files in their proper locations for my file setup
 
-INSTALLATION_DIR=$(pwd)
+SCRIPT_PATH=$(realpath $0)
+INSTALLATION_DIR=$(dirname $SCRIPT_PATH)
 
 # link configuration directories to xdg config home
 for d in $INSTALLATION_DIR/config/*; do
