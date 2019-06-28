@@ -11,3 +11,7 @@ rofi.color-window:  c0, c4
 rofi.font: FONT FONT_SIZE
 rofi.padding: PADDING
 rofi.sidebar-mode: true
+rofi.lines: 3
+rofi.line-padding: 10
+rofi.bw: 3
+rofi.width: 30

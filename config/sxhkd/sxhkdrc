@@ -145,15 +145,15 @@ super + {minus,equal}
 
 # volume up/down
 {XF86AudioRaiseVolume, XF86AudioLowerVolume}
-    pactl set-sink-volume 0 {+,-}5%
+    amixer set Master 5{+,-}
 
 # volume mute
 XF86AudioMute
-    pactl set-sink-mute 0 toggle
+    amixer set Master toggle
 
 # mic mute
 XF86AudioMicMute
-    pactl set-source-mute 1 toggle
+    amixer set Capture toggle
 
 ######################
 ## script execution ##

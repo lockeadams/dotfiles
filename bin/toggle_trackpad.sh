@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # toggle_trackpad.sh - enables/disables trackpad
 
 declare -i ID

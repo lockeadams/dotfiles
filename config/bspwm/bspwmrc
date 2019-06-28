@@ -38,3 +38,6 @@
 
     # disable trackpad
     ~/bin/toggle_trackpad.sh
+
+    # enable notification service
+    dunst

@@ -17,9 +17,6 @@
     # don't beep
     unsetopt beep
 
-    # use vi keybinds
-    bindkey -v
-
     # prompt management
     autoload -Uz promptinit
     promptinit
@@ -29,7 +26,13 @@
     autoload -Uz compinit
     compinit
 
-    # change cursor shape for different vi modes.
+    # use vi keybinds
+    bindkey -v
+
+    # remove mode switching delay
+    KEYTIMEOUT=5
+
+    # change cursor shape for different vi modes
     function zle-keymap-select {
       if [[ ${KEYMAP} == vicmd ]] ||
          [[ $1 = 'block' ]]; then
@@ -43,13 +46,11 @@
     }
     zle -N zle-keymap-select
 
-    # use beam shape cursor on startup.
-    echo -ne '\e[6 q'
-
-    # use beam shape cursor for each new prompt.
-    preexec() {
+    # use beam before each command
+    beam_cursor() {
        echo -ne '\e[6 q'
     }
+    precmd_functions+=(beam_cursor)
 
 #############
 ## aliases ##
