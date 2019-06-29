@@ -3,7 +3,7 @@
 
 SCRIPT_PATH=$(realpath $0)
 INSTALLATION_DIR=$(dirname $SCRIPT_PATH)
-[[ -z "$XDG_CONFIG_HOME ]] && XDG_CONFIG_HOME=$HOME/.config
+[[ -z "$XDG_CONFIG_HOME" ]] && XDG_CONFIG_HOME=$HOME/.config
 
 # link configuration directories to xdg config home
 for d in $INSTALLATION_DIR/config/*; do
