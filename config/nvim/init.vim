@@ -9,9 +9,9 @@
 
     call plug#begin()
         Plug 'Yggdroot/indentLine'
-        Plug 'chrisbra/Colorizer'
-        Plug 'neoclide/coc.nvim', {'branch': 'release'}
-        Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+        Plug 'arcticicestudio/nord-vim'
+        Plug 'ycm-core/YouCompleteMe'
+        Plug 'w0rp/ale'
     call plug#end()
 
 "" general settings
@@ -24,6 +24,7 @@
     set signcolumn=yes
     set list
     set listchars=tab:•\ ,trail:•
+    colorscheme nord
 
 "" keymaps
 
@@ -33,3 +34,10 @@
     " yank and paste to clipboard w/ leader
     map <leader>y "+y
     map <leader>p "+p
+
+    " run python code in new shell
+    autocmd FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
+
+"" ycm settings
+
+    let g:ycm_autoclose_preview_window_after_completion = 1

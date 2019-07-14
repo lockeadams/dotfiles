@@ -41,3 +41,9 @@
 
     # enable notification service
     dunst
+
+    # start compositor
+    compton --backend glx --paint-on-overlay --vsync opengl-swc
+
+    # hide cursor if not in use
+    unclutter

@@ -16,6 +16,7 @@
 !! SOURCE TERMINAL COLORS !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!
 #include "/home/locke/.config/xorg/themes/nord"
+#define COLORSCHEME nord
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !! SOURCE PROGRAM SPECIFIC FILES !!
