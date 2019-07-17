@@ -40,7 +40,7 @@
     ~/bin/toggle_trackpad.sh
 
     # enable notification service
-    dunst
+    ~/bin/dunst_xcolors.sh
 
     # start compositor
     compton --backend glx --paint-on-overlay --vsync opengl-swc

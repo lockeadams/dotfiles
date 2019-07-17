@@ -12,6 +12,7 @@
         Plug 'arcticicestudio/nord-vim'
         Plug 'ycm-core/YouCompleteMe'
         Plug 'w0rp/ale'
+        Plug 'chrisbra/Colorizer'
     call plug#end()
 
 "" general settings

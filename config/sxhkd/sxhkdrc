@@ -17,6 +17,10 @@ super + Return
 super + space
     rofi -show drun
 
+# status notification
+super + i
+    ~/bin/dunst_status.sh
+
 # make sxhkd reload its configuration files:
 super + Escape
     pkill -USR1 -x sxhkd
@@ -141,19 +145,19 @@ super + {minus,equal}
 
 # brightness control
 {XF86MonBrightnessUp, XF86MonBrightnessDown}
-    light -{A,U} 10
+    ~/bin/brightness_coltrol.sh 5{+,-}
 
 # volume up/down
 {XF86AudioRaiseVolume, XF86AudioLowerVolume}
-    amixer set Master 5{+,-}
+    ~/bin/volume_control.sh 5{+,-}
 
 # volume mute
 XF86AudioMute
-    amixer set Master toggle
+    ~/bin/volume_control.sh mute
 
 # mic mute
 XF86AudioMicMute
-    amixer set Capture toggle
+    ~/bin/mic_toggle.sh
 
 ######################
 ## script execution ##
