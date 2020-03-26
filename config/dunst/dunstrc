@@ -6,7 +6,7 @@
 ## ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚══════╝   ╚═╝
 
 [global]
-    geometry = "300x5-10+10"
+    geometry = "215x5-10+10"
     indicate_hidden = yes
     shrink = no
     notification_height = 0
